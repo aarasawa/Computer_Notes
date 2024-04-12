@@ -11,11 +11,28 @@
             "id": "34d1a6df9d49e619",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Problem Solving Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c9ce320959a995e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Local File Inclusion.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Local File Inclusion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Local File Inclusion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md"
+                "file": "Local File Inclusion.md"
               }
             }
           }
@@ -140,8 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a325c304e700b28a",
+  "active": "c9ce320959a995e7",
   "lastOpenFiles": [
+    "Problem Solving Methodology.md",
+    "Local File Inclusion.md",
     "Welcome.md"
   ]
 }
