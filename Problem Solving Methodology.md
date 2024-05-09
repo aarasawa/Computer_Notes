@@ -1,2 +1,0 @@
-#HowToSolveIt #Polya #ProblemSolving
-

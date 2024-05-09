@@ -1,0 +1,1381 @@
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  background-color: var(--background-secondary);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  /* The circles on the timeline */
+}
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: var(--background-secondary);
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.timeline-left {
+  left: 0;
+  /* Add arrows to the left container (pointing right) */
+}
+.timeline-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--background-secondary);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--background-secondary);
+}
+
+/* Place the container to the right */
+.timeline-right {
+  left: 50%;
+  /* Add arrows to the right container (pointing left) */
+  /* Fix the circle for containers on the right side */
+}
+.timeline-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--background-secondary);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--background-secondary) transparent transparent;
+}
+.timeline-right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 10px 15px;
+  background-color: var(--background-accent);
+  position: relative;
+  border-radius: 6px;
+}
+
+.timeline-rendered {
+  color: var(--text-faint);
+  font-size: smaller;
+}
+.timeline-rendered::before {
+  content: "Updated: ";
+}
+
+:root {
+  hoverHighlightColor: transparent;
+}
+
+.vis-timeline {
+  border: 1px solid transparent;
+}
+
+.runtime-hover {
+  background: color-mix(in oklab, var(--hoverHighlightColor), transparent 40%);
+  border-color: color-mix(in oklab, var(--hoverHighlightColor), white 30%) !important;
+  filter: none;
+}
+
+.vis-item-content .timeline-card,
+.vis-item-overflow .timeline-card {
+  display: none;
+  width: 300px;
+  height: max-content;
+  position: fixed !important;
+}
+
+div.vis-item-content > a,
+div.vis-item-overflow > div > a {
+  text-decoration: none !important;
+  color: inherit;
+  padding: 6px;
+}
+
+.vis-item:hover div.vis-item-content > a,
+.vis-item:hover div.vis-item-overflow > div > a,
+.vis-item.vis-selected div.vis-item-content > a,
+.vis-item.vis-selected div.vis-item-overflow > div > a {
+  font-weight: bold;
+}
+
+.vis-item {
+  cursor: pointer;
+  box-sizing: border-box !important;
+}
+.vis-item.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-background.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-background.vis-selected.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange:hover {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-box.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-box.vis-selected.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange:hover {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-point.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-point.vis-selected.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange:hover {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-range.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-range.vis-selected.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange:hover {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-line.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-line.vis-selected.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange:hover {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-dot.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.3);
+  border-color: orange;
+}
+
+.vis-item.vis-dot.vis-selected.orange {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.orange:hover {
+  filter: none;
+  background-color: rgba(255, 201, 102, 0.45);
+  border-color: orange;
+}
+
+.vis-item.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-background.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-background.vis-selected.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue:hover {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-box.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-box.vis-selected.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue:hover {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-point.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-point.vis-selected.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue:hover {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-range.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-range.vis-selected.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue:hover {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-line.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-line.vis-selected.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue:hover {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-dot.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.3);
+  border-color: blue;
+}
+
+.vis-item.vis-dot.vis-selected.blue {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.blue:hover {
+  filter: none;
+  background-color: rgba(102, 102, 255, 0.45);
+  border-color: blue;
+}
+
+.vis-item.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-background.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-background.vis-selected.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green:hover {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-box.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-box.vis-selected.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green:hover {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-point.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-point.vis-selected.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green:hover {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-range.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-range.vis-selected.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green:hover {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-line.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-line.vis-selected.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green:hover {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-dot.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.3);
+  border-color: green;
+}
+
+.vis-item.vis-dot.vis-selected.green {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.green:hover {
+  filter: none;
+  background-color: rgba(0, 230, 0, 0.45);
+  border-color: green;
+}
+
+.vis-item.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-background.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-background.vis-selected.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red:hover {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-box.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-box.vis-selected.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red:hover {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-point.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-point.vis-selected.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red:hover {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-range.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-range.vis-selected.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red:hover {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-line.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-line.vis-selected.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red:hover {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-dot.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.3);
+  border-color: red;
+}
+
+.vis-item.vis-dot.vis-selected.red {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.red:hover {
+  filter: none;
+  background-color: rgba(255, 102, 102, 0.45);
+  border-color: red;
+}
+
+.vis-item.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-background.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-background.vis-selected.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple:hover {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-box.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-box.vis-selected.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple:hover {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-point.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-point.vis-selected.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple:hover {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-range.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-range.vis-selected.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple:hover {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-line.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-line.vis-selected.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple:hover {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-dot.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.3);
+  border-color: purple;
+}
+
+.vis-item.vis-dot.vis-selected.purple {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.purple:hover {
+  filter: none;
+  background-color: rgba(230, 0, 230, 0.45);
+  border-color: purple;
+}
+
+.vis-item.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-background.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-background.vis-selected.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow:hover {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-box.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-box.vis-selected.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow:hover {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-point.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-point.vis-selected.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow:hover {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-range.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-range.vis-selected.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow:hover {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-line.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-line.vis-selected.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow:hover {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-dot.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.3);
+  border-color: yellow;
+}
+
+.vis-item.vis-dot.vis-selected.yellow {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.yellow:hover {
+  filter: none;
+  background-color: rgba(255, 255, 102, 0.45);
+  border-color: yellow;
+}
+
+.vis-item.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-background.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-background.vis-selected.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink:hover {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-box.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-box.vis-selected.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink:hover {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-point.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-point.vis-selected.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink:hover {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-range.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-range.vis-selected.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink:hover {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-line.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-line.vis-selected.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink:hover {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-dot.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: pink;
+}
+
+.vis-item.vis-dot.vis-selected.pink {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.pink:hover {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: pink;
+}
+
+.vis-item.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-background.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-background.vis-selected.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray:hover {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-box.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-box.vis-selected.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray:hover {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-point.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-point.vis-selected.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray:hover {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-range.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-range.vis-selected.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray:hover {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-line.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-line.vis-selected.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray:hover {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-dot.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.3);
+  border-color: gray;
+}
+
+.vis-item.vis-dot.vis-selected.gray {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-item.gray:hover {
+  filter: none;
+  background-color: rgba(179, 179, 179, 0.45);
+  border-color: gray;
+}
+
+.vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right {
+  border-color: var(--background-secondary);
+}
+
+.vis-grid.vis-minor {
+  display: none;
+}
+.vis-grid.vis-major {
+  display: none;
+}
+
+/* Vis Timeline Navigation */
+.vis-navigation-input {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  width: 65% !important;
+  background-color: var(--background-secondary-alt);
+  border: none;
+  border-radius: 7px;
+  height: auto;
+  width: max-content;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  overflow-wrap: break-word;
+  color: var(--text-normal);
+  appearance: textfield;
+  cursor: text;
+  font-family: "Comic Sans MS" !important;
+  font-size: 15px !important;
+}
+
+.ob-timelines {
+  display: none;
+}
+
+.empty-timeline {
+  color: red;
+}
+
+.timeline-card {
+  grid-auto-rows: min-content;
+  color: #d1c077;
+  padding: 1px;
+  background: var(--background-secondary);
+  text-decoration: none !important;
+  color: var(--text-normal);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+  margin-block-end: 20px;
+  border-radius: 10px;
+}
+.timeline-card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+.timeline-card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px 10px 0px 0px;
+}
+.timeline-card article {
+  padding-left: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.timeline-card p {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 1;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-break: break-word;
+  white-space: normal;
+}

@@ -16,5 +16,13 @@
       "modifiers": [],
       "key": "F5"
     }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
   ]
 }

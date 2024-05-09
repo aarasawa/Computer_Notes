@@ -1,4 +1,4 @@
-#Vulnerability #Cybersecurity #WebExploit
+#Vulnerability #WebExploit
 
 **Local File Inclusion** (LFI) is the process of including files present locally on the server.
 
