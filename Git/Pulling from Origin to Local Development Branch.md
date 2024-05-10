@@ -19,5 +19,17 @@ In order:
 	<code>fetch</code> can be done any time before a <code>merge</code> since because fetch goes to origin, takes any updates and *copies* it to *origin/branch* for any branch *named branch* in remote. 
 	*My questions*
 		*Does origin mean the original repository that you have forked or cloned?*
-			
+			Origin in the context of the *forked* repo refers to the forked master branch. So any fetches or pushes remain in the context of the forked repo.
 		*When updates are copied to "origin/branch" is this a branch on my machine?*
+			Yes. Fetching or pulling updates information from the original repository and *in the case of fetch* updates information for respective branches. 
+##### Recommended process
+``` bash
+git fetch origin
+git checkout master
+git merge --ff-only origin/master
+git checkout development
+git merge --no-ff origin/master
+```
+*First Impressions*:
+	So a first guess about what is being done here: get updated information from the original repository, change to local master branch, merge updates to the local master, change to development branch, merge updates with do not conflict
+*What actually happens*:

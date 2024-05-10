@@ -50,12 +50,11 @@ docker compose up -d # Detached (silent) mode
 ##### Starting the Environment
 *Make sure your version is up to date*:
 ``` bash
-	// For master is up-to-date
+	// For master to stay up-to-date
 	git switch master
 	git pull upstream master
 	git push origin master
 ```
-**
 Start the docker server:
 ``` bash
 docker compose up
