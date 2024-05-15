@@ -1,0 +1,15 @@
+#Buddhism 
+
+I copped one of those one teachings a day from going to temple with my dad. I've always been a bit interested with the teachings so I thought why not read it so what its all about. 
+
+*The world is full of suffering. Birth is suffering; old age is suffering; sickness and death are suffering. To meet a person whom one hates is suffering; to be separated from a loved one is suffering; to vainly struggle to satisfy one's needs is suffering. In fact, life that is not free from desire and passion is to lead a life of suffering. This overwhelming fact is called the **Truth of Suffering**.*
+	First off, kind of a dope beginning. I understand what is being said here, that the aspect of wanting, of desire, leads someone into suffering. Suffering, at least from this passage, seems to be an absence of attaining that which you desire. I take this to mean that the constant needs and desires that come tethered to the human experience are what is referred to the Truth of Suffering. 
+
+*The cause of human suffering is undoubtedly found in the thirsts of the physical body and the illusions of the worldly passion. If these thirsts and illusions are traced to their source, they are found to be rooted in the intense desires of the physical instincts. This is called the **Truth of the Cause of Suffering**.*
+	Illusions of the worldly passion, mean that the desires that I mentioned being *tethered* to human experiences are not real. They stem from the body, from the biological "shell" that our consciousness or soul inhabit. The next step of this thought is learning to be apathetic towards these desires. To divorce yourself from the impacts they have on yourself, your experience, to be free from suffering. 
+
+*If desire, lying at the root of all human passion, can be removed, then passion will die out and all human suffering will be ended. This is called the **Truth of the Cessation of Suffering**.*
+	This kind of matches what I had in mind. However, it does leave me with some questions, and it can be the wording, but, does this mean to rid yourself of all passion? What happens to passion for others? Charity? Generosity? It also leaves questions about drive, motivation to do certain things. At least from my perspective, there are a lot of objectively good things that come from passion. Passion for helping others, for wanting to get better at something, or for improving yourself. I guess I am getting ahead of myself, they just say that this is the *truth* of the cessation of suffering.
+
+*In order to attain a state where there is no desire and no suffering, it is necessary to follow the Noble Eightfold Path. This is called the **Truth of the Noble Path to the Cessation of Suffering**. People must keep these Four Noble Truths clearly in mind.*
+	I do not know what the Noble Eightfold Path is. Welp, we will see what comes next.
