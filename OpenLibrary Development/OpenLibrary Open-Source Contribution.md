@@ -61,3 +61,38 @@ docker compose up
 ```
 Then open: https://localhost:8080
 
+##### Pulling from Prod
+``` git
+git switch master
+git pull -ff-only upstream master
+git push origin master
+
+git switch 8829/fix/redesign-sort-ui
+```
+
+##### Out-of-Sync Branches
+``` bash
+# MASTER is behind upstream master
+git switch master
+git pull upstream master
+git push origin master
+
+# MASTER is behind and ahead of upstream master
+git switch master
+git reset --hard HEAD~[number of commits ahead by]
+git pull --ff-only upstream master
+git push -f origin master
+```
+A **"hard" reset** will permanently undo your changes, make sure you are on the master branch before resetting. *Master is always supposed to be identical to upstream version*. 
+
+If you have accidentally committed something your master, reset it with as many commits as you like <code>git reset --hard HEAD~100</code> is a good way to get a clean slate. Then pull in the upstream version. 
+
+``` bash
+# Working branch is behind upstream master
+git switch master
+git pull --ff-only upstream master
+git push origin master
+git switch [branch-name]
+git rebase master
+```
+If rebasing fails or provokes merge conflicts: [here](https://github.com/internetarchive/openlibrary/wiki/Git-Cheat-Sheet#troubleshooting-your-pull-request)
