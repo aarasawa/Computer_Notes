@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fc188e003612ce82",
+        "id": "d21f99fbcb7bf58e",
         "type": "tabs",
         "children": [
           {
-            "id": "0bc7a7ce410bd256",
+            "id": "5936190eab285893",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
+                "file": "Chess/Lessons/Deflection.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
+                "file": "Chess/Lessons/Deflection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
+                "file": "Chess/Lessons/Deflection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OpenLibrary Development/OpenLibrary Open-Source Contribution.md"
+                "file": "Chess/Lessons/Deflection.md"
               }
             }
           }
@@ -149,14 +149,15 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "0bc7a7ce410bd256",
+  "active": "5936190eab285893",
   "lastOpenFiles": [
+    "Chess/Lessons/Deflection.md",
+    "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
     "OpenLibrary Development/Sort Option for Search page Development.md",
     "Git/Revert Commits.md",
     "Git/Pulling from Origin to Local Development Branch.md",
     "Git/Git Commands on a Forked Repository.md",
     "OpenLibrary Development/Infogami.md",
-    "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
     "Network Enumeration with NMAP/Firewall and IDS IPS Evasion.md",
     "Network Enumeration with NMAP/Service Enumeration.md",
     "Network Enumeration with NMAP/NMAP Scan Performance.md",
@@ -180,7 +181,6 @@
     "AgriTag/MapLibreGL/Map Style Specifications.md",
     "AgriTag/MapLibreGL",
     "AgriTag/AWS Amplify Local Development Environment Not Starting.md",
-    "AgriTag/AWS Amplify Gen 2 Template.md",
     "AgriTag/Amplify Concepts",
     "Authentication",
     "AgriTag",
