@@ -1,4 +1,4 @@
-#NMAP #NetworkEnumeration #Cybersecurity #CLI #Tool
+#NMAP #NetworkEnumeration #Cybersecurity #CLI #BasicToolset 
 
 ### What is NMAP?
 *NMAP* or *Network Mapper* is an open-source network analysis and security auditing tool designed to scan networks and identify hosts, services, operating systems, and applications. 
