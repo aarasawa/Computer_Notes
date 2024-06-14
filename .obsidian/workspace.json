@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Login Brute Forcing/Introduction to Brute Forcing.md",
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Login Brute Forcing/Introduction to Brute Forcing.md",
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Login Brute Forcing/Introduction to Brute Forcing.md",
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Login Brute Forcing/Introduction to Brute Forcing.md"
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md"
               }
             }
           }
@@ -149,10 +149,12 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "0c9dc87f7597bfe0",
+  "active": "a325c304e700b28a",
   "lastOpenFiles": [
-    "Network Enumeration with NMAP/NMAP.md",
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing",
     "Login Brute Forcing/Introduction to Brute Forcing.md",
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
+    "Network Enumeration with NMAP/NMAP.md",
     "Login Brute Forcing",
     "Chess/Lessons/Deflection.md",
     "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
@@ -179,8 +181,6 @@
     "LeetCode/21. Merge Two Sorted Lists.md",
     "[git.md",
     "AgriTag/MapLibreGL/MapLibre Documentation Introduction.md",
-    "AgriTag/MapLibreGL/Style Document Structure.md",
-    "AgriTag/MapLibreGL/Map Style Specifications.md",
     "AgriTag/MapLibreGL",
     "AgriTag/Amplify Concepts",
     "Authentication",
