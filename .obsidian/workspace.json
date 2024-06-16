@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Cybersecurity",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md"
+                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md"
               }
             }
           }
@@ -149,11 +150,15 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "a325c304e700b28a",
+  "active": "736842586c958368",
   "lastOpenFiles": [
+    "Intro to Shogi",
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Default Passwords.md",
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Untitled",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing",
     "Login Brute Forcing/Introduction to Brute Forcing.md",
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
     "Network Enumeration with NMAP/NMAP.md",
     "Login Brute Forcing",
     "Chess/Lessons/Deflection.md",
@@ -179,15 +184,11 @@
     "Interview Review/Application Development Lifecycle.md",
     "LeetCode/Untitled.md",
     "LeetCode/21. Merge Two Sorted Lists.md",
-    "[git.md",
-    "AgriTag/MapLibreGL/MapLibre Documentation Introduction.md",
     "AgriTag/MapLibreGL",
     "AgriTag/Amplify Concepts",
     "Authentication",
     "AgriTag",
     "HTML",
-    "GIS",
-    "Backend Development",
     "OpenLibrary Development/openlib_searchbar_results.png.png",
     "OpenLibrary Development/openlib_searchbar.png.png",
     "openlib_searchbar_books.png.png"
