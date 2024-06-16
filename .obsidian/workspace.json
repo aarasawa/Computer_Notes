@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
+                "file": "Shogi/Introduction to Shogi.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
+                "file": "Shogi/Introduction to Shogi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
+                "file": "Shogi/Introduction to Shogi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md"
+                "file": "Shogi/Introduction to Shogi.md"
               }
             }
           }
@@ -150,11 +149,13 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "736842586c958368",
+  "active": "0c9dc87f7597bfe0",
   "lastOpenFiles": [
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
+    "Shogi/Introduction to Shogi.md",
+    "Shogi",
     "Intro to Shogi",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Default Passwords.md",
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Untitled",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing",
@@ -187,8 +188,6 @@
     "AgriTag/MapLibreGL",
     "AgriTag/Amplify Concepts",
     "Authentication",
-    "AgriTag",
-    "HTML",
     "OpenLibrary Development/openlib_searchbar_results.png.png",
     "OpenLibrary Development/openlib_searchbar.png.png",
     "openlib_searchbar_books.png.png"
