@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shogi/Introduction to Shogi.md",
+                "file": "Baduk/Introduction to Baduk.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shogi/Introduction to Shogi.md",
+                "file": "Baduk/Introduction to Baduk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shogi/Introduction to Shogi.md",
+                "file": "Baduk/Introduction to Baduk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shogi/Introduction to Shogi.md"
+                "file": "Baduk/Introduction to Baduk.md"
               }
             }
           }
@@ -151,8 +151,10 @@
   },
   "active": "0c9dc87f7597bfe0",
   "lastOpenFiles": [
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
     "Shogi/Introduction to Shogi.md",
+    "Baduk/Introduction to Baduk.md",
+    "Baduk",
+    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
     "Shogi",
     "Intro to Shogi",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Default Passwords.md",
@@ -184,10 +186,8 @@
     "Network Enumeration with NMAP/NMAP Scripting Engine.md",
     "Interview Review/Application Development Lifecycle.md",
     "LeetCode/Untitled.md",
-    "LeetCode/21. Merge Two Sorted Lists.md",
     "AgriTag/MapLibreGL",
     "AgriTag/Amplify Concepts",
-    "Authentication",
     "OpenLibrary Development/openlib_searchbar_results.png.png",
     "OpenLibrary Development/openlib_searchbar.png.png",
     "openlib_searchbar_books.png.png"
