@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
+                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 280.5
   },
   "right": {
     "id": "3887ff1916387914",
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
+                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
+                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md"
+                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md"
               }
             }
           }
@@ -151,8 +151,14 @@
   },
   "active": "b66260a605483bc5",
   "lastOpenFiles": [
-    "Weightlifting/Male v. Female Training Differences.md",
+    "HTML/HTML Div vs Span Elements.md",
+    "HTML/HTML Overview.md",
+    "HTML/HTML Elements.md",
+    "HTML/HTML Element Structure.md",
+    "Untitled",
     "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
+    "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
+    "Weightlifting/Male v. Female Training Differences.md",
     "Shogi/Shogi Fundamentals/Capture.md",
     "Shogi/Shogi Fundamentals",
     "Login Brute Forcing/Web Forms Brute Forcing",
@@ -175,18 +181,12 @@
     "Git/Revert Commits.md",
     "Baduk/Introduction to Baduk.md",
     "Git/Git Branching",
-    "Shogi/Introduction to Shogi.md",
     "Baduk",
     "Shogi",
     "Intro to Shogi",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Untitled",
     "Login Brute Forcing/Basic HTTP Auth Brute Forcing",
-    "Login Brute Forcing/Introduction to Brute Forcing.md",
-    "Network Enumeration with NMAP/NMAP.md",
     "Login Brute Forcing",
-    "Chess/Lessons/Deflection.md",
-    "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
-    "Weightlifting",
     "Chess/Lessons/smothered_mate.png",
     "OpenLibrary Development/openlib_searchbar_results.png.png",
     "OpenLibrary Development/openlib_searchbar.png.png",
