@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
+                "file": "NextJS/Server-Side Rendering (SSR).md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 200
   },
   "right": {
     "id": "3887ff1916387914",
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
+                "file": "NextJS/Server-Side Rendering (SSR).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
+                "file": "NextJS/Server-Side Rendering (SSR).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md"
+                "file": "NextJS/Server-Side Rendering (SSR).md"
               }
             }
           }
@@ -149,15 +149,17 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "b66260a605483bc5",
+  "active": "a325c304e700b28a",
   "lastOpenFiles": [
+    "README.md",
+    "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
+    "NextJS/Server-Side Rendering (SSR).md",
+    "NextJS",
     "HTML/HTML Div vs Span Elements.md",
     "HTML/HTML Overview.md",
     "HTML/HTML Elements.md",
     "HTML/HTML Element Structure.md",
-    "Untitled",
     "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
-    "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
     "Weightlifting/Male v. Female Training Differences.md",
     "Shogi/Shogi Fundamentals/Capture.md",
     "Shogi/Shogi Fundamentals",
@@ -178,8 +180,6 @@
     "Git/Git Rebase.md",
     "Git/Git Merge.md",
     "Git/Git Commit.md",
-    "Git/Revert Commits.md",
-    "Baduk/Introduction to Baduk.md",
     "Git/Git Branching",
     "Baduk",
     "Shogi",
