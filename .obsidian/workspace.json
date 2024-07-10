@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b90ce6a7d24b3564",
+        "id": "f269f682f406b68f",
         "type": "tabs",
         "children": [
           {
-            "id": "b66260a605483bc5",
+            "id": "6b0d25df507c35eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NextJS/Server-Side Rendering (SSR).md",
+                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NextJS/Server-Side Rendering (SSR).md",
+                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NextJS/Server-Side Rendering (SSR).md",
+                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NextJS/Server-Side Rendering (SSR).md"
+                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md"
               }
             }
           }
@@ -149,47 +149,47 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "a325c304e700b28a",
+  "active": "6b0d25df507c35eb",
   "lastOpenFiles": [
-    "README.md",
+    "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
+    "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Language Learning/Chinese/Learn Chinese.md",
+    "Language Learning/Chinese",
+    "Interview Review/Application Development Lifecycle.md",
+    "Language Learning",
+    "Interview Review/Table of Contents.md",
+    "Login Brute Forcing/Web Forms Brute Forcing/Login Form Attack.md",
+    "Login Brute Forcing/Service Authentication Attacks",
+    "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
     "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
+    "Project Management/What is Project Management.md",
+    "OpenLibrary Development/Adding new CSS styling.md",
+    "Project Management",
+    "Buddhism/Teaching a Day/Day 3.md",
+    "Buddhism/Teaching a Day/Day 2.md",
+    "Buddhism/Teaching a Day/Day 1.md",
+    "README.md",
+    "OpenLibrary Development/Sort Option for Search page Development.md",
+    "OpenLibrary Development/OL Development Note Images/openlib_searchbar_results.png.png",
+    "OpenLibrary Development/Infogami.md",
+    "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
+    "OpenLibrary Development/OL Development Note Images/openlib_searchbar.png.png",
+    "OpenLibrary Development/OL Development Note Images",
     "NextJS/Server-Side Rendering (SSR).md",
+    "Open",
     "NextJS",
     "HTML/HTML Div vs Span Elements.md",
     "HTML/HTML Overview.md",
     "HTML/HTML Elements.md",
     "HTML/HTML Element Structure.md",
-    "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
     "Weightlifting/Male v. Female Training Differences.md",
     "Shogi/Shogi Fundamentals/Capture.md",
     "Shogi/Shogi Fundamentals",
     "Login Brute Forcing/Web Forms Brute Forcing",
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Username Brute Force.md",
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Password Attacks.md",
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Default Passwords.md",
-    "Git/Juggling Commits.md",
-    "Baduk/Intro to Eye Shapes.md",
-    "Git/Locally Stacked Commits.md",
-    "Git/Git Interactive Rebase.md",
-    "Git/Git Cherry-pick.md",
-    "Git/Reversing Changes in Git.md",
-    "Git/Relative Refs.md",
-    "Git/Git Branch.md",
-    "Git/Git Branching/Introduction to Git.md",
-    "Git/Moving Around Git.md",
-    "Git/Git Rebase.md",
-    "Git/Git Merge.md",
-    "Git/Git Commit.md",
     "Git/Git Branching",
-    "Baduk",
-    "Shogi",
-    "Intro to Shogi",
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing/Untitled",
-    "Login Brute Forcing/Basic HTTP Auth Brute Forcing",
-    "Login Brute Forcing",
     "Chess/Lessons/smothered_mate.png",
-    "OpenLibrary Development/openlib_searchbar_results.png.png",
-    "OpenLibrary Development/openlib_searchbar.png.png",
     "openlib_searchbar_books.png.png"
   ]
 }
