@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
+                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
+                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
+                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md"
+                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md"
               }
             }
           }
@@ -151,10 +151,10 @@
   },
   "active": "dd2d71b9fe44bd36",
   "lastOpenFiles": [
-    "OpenLibrary Development/Generate POT check.md",
-    "OpenLibrary Development/Pre-commit Testing Information.md",
     "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
     "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
+    "OpenLibrary Development/Generate POT check.md",
+    "OpenLibrary Development/Pre-commit Testing Information.md",
     "Untitled 1.md",
     "Untitled.md",
     "Language Learning/Chinese/Learn Chinese.md",
