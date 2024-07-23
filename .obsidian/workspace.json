@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
+                "file": "Productivity/Eat the Frog.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
+                "file": "Productivity/Eat the Frog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
+                "file": "Productivity/Eat the Frog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md"
+                "file": "Productivity/Eat the Frog.md"
               }
             }
           }
@@ -151,12 +151,18 @@
   },
   "active": "dd2d71b9fe44bd36",
   "lastOpenFiles": [
-    "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
-    "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
-    "OpenLibrary Development/Generate POT check.md",
-    "OpenLibrary Development/Pre-commit Testing Information.md",
+    "Fullstack Developer Notes/Cloud Computing/Definition and Characteristics of Cloud Computing.md",
+    "Productivity/Eat the Frog.md",
+    "Productivity",
     "Untitled 1.md",
     "Untitled.md",
+    "README.md",
+    "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
+    "Fullstack Developer Notes/Cloud Computing",
+    "Fullstack Developer Notes",
+    "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
+    "OpenLibrary Development/Generate POT check.md",
+    "OpenLibrary Development/Pre-commit Testing Information.md",
     "Language Learning/Chinese/Learn Chinese.md",
     "Language Learning/Chinese",
     "Interview Review/Application Development Lifecycle.md",
@@ -172,7 +178,6 @@
     "Buddhism/Teaching a Day/Day 3.md",
     "Buddhism/Teaching a Day/Day 2.md",
     "Buddhism/Teaching a Day/Day 1.md",
-    "README.md",
     "OpenLibrary Development/Sort Option for Search page Development.md",
     "OpenLibrary Development/OL Development Note Images/openlib_searchbar_results.png.png",
     "OpenLibrary Development/Infogami.md",
@@ -184,11 +189,6 @@
     "NextJS",
     "HTML/HTML Div vs Span Elements.md",
     "HTML/HTML Overview.md",
-    "HTML/HTML Elements.md",
-    "HTML/HTML Element Structure.md",
-    "Shogi/Shogi Fundamentals",
-    "Login Brute Forcing/Web Forms Brute Forcing",
-    "Git/Git Branching",
     "Chess/Lessons/smothered_mate.png",
     "openlib_searchbar_books.png.png"
   ]
