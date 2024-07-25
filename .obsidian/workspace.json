@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fd7251fed99765b0",
+        "id": "d938e8ce6651ae60",
         "type": "tabs",
         "children": [
           {
-            "id": "dd2d71b9fe44bd36",
+            "id": "fe2debac00d81313",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Productivity/Eat the Frog.md",
+                "file": "Responsive Web Design/Media Queries.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Productivity/Eat the Frog.md",
+                "file": "Responsive Web Design/Media Queries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Productivity/Eat the Frog.md",
+                "file": "Responsive Web Design/Media Queries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Productivity/Eat the Frog.md"
+                "file": "Responsive Web Design/Media Queries.md"
               }
             }
           }
@@ -149,10 +149,20 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "dd2d71b9fe44bd36",
+  "active": "fe2debac00d81313",
   "lastOpenFiles": [
-    "Fullstack Developer Notes/Cloud Computing/Definition and Characteristics of Cloud Computing.md",
+    "Responsive Web Design/Grid View.md",
+    "Responsive Web Design/Media Queries.md",
+    "Figma/Sections.md",
+    "Figma/Groups.md",
+    "Responsive Web Design/Viewport.md",
+    "Responsive Web Design/Introduction to Responsive Web Design.md",
+    "Figma/Frames.md",
+    "Responsive Web Design",
     "Productivity/Eat the Frog.md",
+    "Figma/Untitled",
+    "Figma",
+    "Fullstack Developer Notes/Cloud Computing/Definition and Characteristics of Cloud Computing.md",
     "Productivity",
     "Untitled 1.md",
     "Untitled.md",
@@ -177,18 +187,8 @@
     "Project Management",
     "Buddhism/Teaching a Day/Day 3.md",
     "Buddhism/Teaching a Day/Day 2.md",
-    "Buddhism/Teaching a Day/Day 1.md",
-    "OpenLibrary Development/Sort Option for Search page Development.md",
     "OpenLibrary Development/OL Development Note Images/openlib_searchbar_results.png.png",
-    "OpenLibrary Development/Infogami.md",
-    "OpenLibrary Development/OpenLibrary Open-Source Contribution.md",
     "OpenLibrary Development/OL Development Note Images/openlib_searchbar.png.png",
-    "OpenLibrary Development/OL Development Note Images",
-    "NextJS/Server-Side Rendering (SSR).md",
-    "Open",
-    "NextJS",
-    "HTML/HTML Div vs Span Elements.md",
-    "HTML/HTML Overview.md",
     "Chess/Lessons/smothered_mate.png",
     "openlib_searchbar_books.png.png"
   ]
