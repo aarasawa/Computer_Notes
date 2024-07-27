@@ -44,3 +44,64 @@ Can add as many breakpoints as you wish. For example, adding another query at 60
 }
 ```
 
+Example for breakpoints and using column widths in HTML:
+``` html
+/* Desktop */
+<div class="row">
+	<div class="col-3 col-s-3">...</div>
+	<div class="col-6 col-s-9">...</div>
+	<div class="col-3 col-s-12">...</div>
+</div>
+```
+For desktop, the first and third section will span 3 columns each, with the middle spanning 6 columns. For tablets, first section spans 3 columns, second spans 9 columns, and third will be displayed below the first 2 and span 12 columns.
+
+Typical device breakpoints:
+``` css
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */  
+@media only screen and (min-width: 992px) {...}  
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */  
+@media only screen and (min-width: 1200px) {...}
+```
+
+Media queries can be used to change layout of a page depending on the orientation of the browser. CSS properties can apply to only a browser window wider than its height or landscape orientation.
+``` css
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+
+Media queries can also be used to hide elements on different screen sizes:
+``` css
+@media only screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+```
+
+Font size can also vary depending on the breakpoint:
+``` css
+@media only screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+```
