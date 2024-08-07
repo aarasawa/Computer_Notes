@@ -11,8 +11,12 @@
             "id": "fe2debac00d81313",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Python/Virtual Environment.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -92,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Python/Virtual Environment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Python/Virtual Environment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Responsive Web Design/Images.md"
+                "file": "Python/Virtual Environment.md"
               }
             }
           }
@@ -143,8 +149,14 @@
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "a325c304e700b28a",
+  "active": "fe2debac00d81313",
   "lastOpenFiles": [
+    "Freelancing/Netlify for Multiple Client Hosting.md",
+    "Python/Virtual Environment.md",
+    "Python",
+    "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
+    "Freelancing",
+    "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
     "Responsive Web Design/Media Queries.md",
     "Responsive Web Design/Images.md",
     "Responsive Web Design/Grid View.md",
@@ -162,10 +174,8 @@
     "Untitled 1.md",
     "Untitled.md",
     "README.md",
-    "Login Brute Forcing/Service Authentication Attacks/Personalized Wordlists.md",
     "Fullstack Developer Notes/Cloud Computing",
     "Fullstack Developer Notes",
-    "Login Brute Forcing/Service Authentication Attacks/Service Authentication Brute Forcing.md",
     "OpenLibrary Development/Generate POT check.md",
     "OpenLibrary Development/Pre-commit Testing Information.md",
     "Language Learning/Chinese/Learn Chinese.md",
@@ -174,13 +184,9 @@
     "Language Learning",
     "Interview Review/Table of Contents.md",
     "Login Brute Forcing/Web Forms Brute Forcing/Login Form Attack.md",
-    "Login Brute Forcing/Service Authentication Attacks",
     "Login Brute Forcing/Web Forms Brute Forcing/Hydra Modules.md",
     "Login Brute Forcing/Web Forms Brute Forcing/Determine Login Parameters.md",
     "Project Management/What is Project Management.md",
-    "OpenLibrary Development/Adding new CSS styling.md",
-    "Project Management",
-    "Buddhism/Teaching a Day/Day 3.md",
     "OpenLibrary Development/OL Development Note Images/openlib_searchbar_results.png.png",
     "OpenLibrary Development/OL Development Note Images/openlib_searchbar.png.png",
     "Chess/Lessons/smothered_mate.png",
